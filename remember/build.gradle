@@ -8,15 +8,16 @@ ext {
 }
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 22
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -26,8 +27,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.1.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
 }
 
 def groupId = project.PUBLISH_GROUP_ID
